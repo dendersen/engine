@@ -11,6 +11,7 @@ public class Start {
   public static void main(String[] args) {
     art = new Draw();
     game = new Program();
+    game.start();
     PApplet.runSketch(new String[] {"Draw"},art);
   }
   
