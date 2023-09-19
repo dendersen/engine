@@ -11,6 +11,11 @@ public class Sprite extends Art{
     this.y = y;
     this.icon = icon;
   }
+  public int[] move(int x, int y){
+    this.x += x;
+    this.y += y;
+    return new int[] {this.x, this.y};
+  }
   @Override
   public void draw(PGraphics g) {
     g.image(g, x, y);
