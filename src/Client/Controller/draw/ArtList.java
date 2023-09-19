@@ -14,4 +14,10 @@ public class ArtList{
   public boolean remove(Art item){
     return list.remove(item);
   }
+  public Art get(int index){
+    return list.get(index);
+  }
+  public int size(){
+    return list.size();
+  }
 }
