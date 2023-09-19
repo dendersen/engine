@@ -5,10 +5,15 @@ import Client.Controller.draw.ArtList;
 import processing.core.PApplet;
 
 public class Draw extends PApplet{
+  int width,height;
+  public Draw(int screenWidth, int screenHeight){
+    width = screenWidth;
+    height = screenHeight;
+  }
   ArtList content = new ArtList();
   @Override
   public void settings(){
-    
+    size(width, height);
   }
   @Override
   public void setup(){
