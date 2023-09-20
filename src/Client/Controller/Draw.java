@@ -3,11 +3,9 @@ package Client.Controller;
 import Client.Controller.draw.Art;
 import Client.Controller.draw.ArtList;
 import processing.core.PApplet;
-import processing.core.PImage;
 
 public class Draw extends PApplet{
   int width,height;
-  private static Draw access;
   public Draw(int screenWidth, int screenHeight){
     width = screenWidth;
     height = screenHeight;
@@ -17,9 +15,7 @@ public class Draw extends PApplet{
   public void settings(){
     size(width, height);
   }
-  @Override
   public void setup(){
-    access = this;
   }
   @Override
   public void draw(){
@@ -34,7 +30,10 @@ public class Draw extends PApplet{
   public int addItem(Art item){
     return content.add(item);
   }
-  public static PImage loadPImage(String path){
-    return access.loadImage(path);
+  public boolean removeItem(Art item){
+    return content.remove(item);
+  }
+  public void removeItem(int ID){
+    content.remove(ID);
   }
 }

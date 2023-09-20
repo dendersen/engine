@@ -18,7 +18,7 @@ public class Start {
   public static Program getGame() {
     return game;
   }
-  public static Draw getArt() {
+  public static Draw getDraw() {
     return art;
   }
 }
