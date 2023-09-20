@@ -8,8 +8,7 @@
       "type": "java",
       "name": "Start",
       "request": "launch",
-      "mainClass": "Client.Start",
-      "projectName": "engien_5617eae3"
+      "mainClass": "Client.Start"
     }
   ]
 }
