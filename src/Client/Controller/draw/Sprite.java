@@ -26,5 +26,8 @@ public class Sprite extends Art{
   public void draw(PGraphics g) {
     g.image(icon, x, y);
   }
-  
+  public void setPossition(int x,int y){
+    this.x = x;
+    this.y = y;
+  }
 }
