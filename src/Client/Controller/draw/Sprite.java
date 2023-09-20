@@ -24,7 +24,7 @@ public class Sprite extends Art{
   }
   @Override
   public void draw(PGraphics g) {
-    g.image(g, x, y);
+    g.image(icon, x, y);
   }
   
 }
