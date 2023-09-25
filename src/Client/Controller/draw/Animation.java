@@ -15,6 +15,15 @@ public class Animation extends Art {
     this.frames = frames;
     this.repeating = repeating;
   }
+  public Animation(int  x, int y, PImage[] frames, int runTime ,boolean repeating){
+    this.x = x;
+    this.y = y;
+    this.frames = new PImage[runTime];
+    for (int i = 0; i < frames.length; i++) {
+      this.frames[i] = frames[Math.max(Math.min(((frames.length-1)/runTime)*i,frames.length-1),0)];
+    }
+    this.repeating = repeating;
+  }
   @Override
   public void draw(PGraphics g) {
     g.image(frames[currentFrame],x,y);
