@@ -4,7 +4,7 @@ import Client.Start;
 import processing.core.PGraphics;
 import processing.core.PImage;
 
-public class Sprite extends Art{
+public class Sprite implements Art{
   int x,y;
   PImage icon;
   public Sprite(int x, int y, PImage icon){

@@ -4,7 +4,7 @@ import Client.Start;
 import processing.core.PGraphics;
 import processing.core.PImage;
 
-public class Animation extends Art {
+public class Animation implements Art {
   int x,y;
   PImage[] frames;
   boolean repeating;

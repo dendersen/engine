@@ -6,7 +6,7 @@ import processing.core.PGraphics;
 /**
  * TempMoving
  */
-public class TempMoving extends Art{
+public class TempMoving implements Art{
   int x,y;
   int endx,endy;
   int framesRemaning;
