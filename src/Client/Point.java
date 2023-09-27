@@ -1,6 +1,6 @@
 package Client;
 
-public abstract class Point {
+public class Point {
   double x,y;
   public Point(double x, double y){
     this.x = x;
@@ -11,5 +11,8 @@ public abstract class Point {
   }
   public double y(){
     return y;
+  }
+  public double distance(Point other){
+    return Math.sqrt(Math.pow(other.x()-this.x(),2) + Math.pow(other.y()-this.y(),2));
   }
 }
