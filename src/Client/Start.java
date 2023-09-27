@@ -9,7 +9,7 @@ public class Start {
   static Program game;
 
   public static void main(String[] args) {
-    art = new Draw();
+    art = new Draw(1000, 1000);
     game = new Program();
     game.start();
     PApplet.runSketch(new String[] {"Draw"},art);
@@ -18,7 +18,7 @@ public class Start {
   public static Program getGame() {
     return game;
   }
-  public static Draw getArt() {
+  public static Draw getDraw() {
     return art;
   }
 }
